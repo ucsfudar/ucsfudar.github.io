@@ -1,5 +1,14 @@
 <html><head><title>Email Signature for UCSF: The Campaign</title></head>
-     <style type="text/css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+    <style type="text/css">
     #main_footer {
     background: #000;
     background-image: url(https://campaign.ucsf.edu/sites/campaign.ucsf.edu/themes/custom/campaign/vue/dist/static/img/text-bg-dark.png);
@@ -16,6 +25,26 @@
     overflow-x: hidden;
         min-height:260px;
 }
+        .ui-tabs .ui-tabs-nav {
+            margin:0;
+            padding:0;
+        }
+        .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+            background: #5f56a8;
+            border: none;
+        }
+        .ui-widget-header {
+            border: none;
+            background: #FFFFFF;
+        }
+        .ui-widget.ui-widget-content {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .ui-tabs .ui-tabs-panel {
+            padding: 0;
+        }
          
         </style>
     <body style="padding:0;border:0;margin:0">
@@ -23,8 +52,19 @@
         <h1 style="font-family:arial,san-serif;font-size:40;color:#333333;margin-top:75;background-color:white;padding:40px">UCSF: The Campaign Email Signature</h1>
         </header>
 <div style="margin:40px">
-<h2 style="font-family:arial,san-serif;">Outlook desktop users</h2>
-<p style="font-family:arial,san-serif;font-size:12pt;color:#000000">1. <strong>Select </strong>and <strong>copy</strong> a signature below</p>
+    
+    
+    <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Outlook Desktop PC</a></li>
+    <li><a href="#tabs-2">Outlook Webmail</a></li>
+    <li><a href="#tabs-3">Outlook Desktop Mac</a></li>
+      <li><a href="#tabs-4">Help</a></li>
+  </ul>
+  <div id="tabs-1">
+      <h2 style="font-family:arial,san-serif;">Instructions</h2>
+
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">1. <strong>Select </strong>and <strong>copy</strong> a signature below</p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">2. In Outlook (desktop), Open a new email. From the message tab select “Signature” then “Signatures…” </p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">3. Select “new” at the bottom of the “Edit Signatures” box to create a new signature</p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000"> 4. Give your new signature a name</p>
@@ -32,11 +72,40 @@
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">6. Select and type over the default information<strong> one line at a time</strong>, making sure to retain the type specifications</p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">7. <strong>Click OK</strong>, then close the “Signatures” window</p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">8. Insert your new signature into the email you are composing using the “Signatures” option, and consider setting as &quot;Default&quot;</p>
-<p style="font-family:arial,san-serif;font-size:12pt;color:#000000"><strong>Tips:</strong></p>
+  </div>
+  <div id="tabs-2">
+      <h2 style="font-family:arial,san-serif;">Instructions</h2>
+   <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">1. <strong>Select </strong>and <strong>copy</strong> a signature below</p>
+<p style="font-family:arial,san-serif;font-size:12pt;color:#000000">2. Login to Outlook Webmail (desktop)</p>
+<p style="font-family:arial,san-serif;font-size:12pt;color:#000000">3. Go to Mail > Layout > <a href="https://outlook.office.com/owa/?path=/options/mailsignatures" target="_blank">Email Signatures</a></p>
+<p style="font-family:arial,san-serif;font-size:12pt;color:#000000"> 4. Paste your signature</p>
+<p style="font-family:arial,san-serif;font-size:12pt;color:#000000">5. Click save</p>
+  </div>
+  <div id="tabs-3">
+        <h2 style="font-family:arial,san-serif;">Instructions</h2>
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">For Outlook 2011 users, follow the instructions for Outlook Desktop PC.  However, due to inconsistencies, test your email signature to make sure the logo isn't being sent as an attachment.  If it is, consider excluding it.</p>
+      
+  </div>
+<div id="tabs-4">
+    <h2 style="font-family:arial,san-serif;">Tips and Help</h2>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Please do not customize the colors (black), typeface (Arial), type size or logo graphics. </p>
+<<<<<<< HEAD
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Questions? <a href="mailto:patrick.mcmahon@ucsf.edu">Contact us</a>.</p>
 <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">For <strong>Outlook Webmail</strong> users, copy one of the below options and paste <a href="https://outlook.office.com/owa/?path=/options/mailsignatures" target="_blank">within the email signature window</a>.<br>
 </p>
+=======
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Test to make sure your Campaign logo isn't being sent as an attachment (look for the paperclip icon).  If it is, seek assistance or consider excluding the logo until resolved. </p>
+      <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Feel free to alter the default links to match your program, but try to keep it to two options if possible.</p>
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">At a minimum, please include your name, title, preferred contact, and the Campaign website link.</p>
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Consider not using this signature (with logo) for replies.  This is a <a href="https://www.extendoffice.com/documents/outlook/4120-outlook-reply-forward-without-signature.html" target="_blank">setting you can control in outlook</a>.</p>
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Many desktop email clients will not show the logo by default.</p>
+    <p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Avoid copying and pasting a colleagues signature as a starting point.</p>
+<p style="font-family:arial,san-serif;font-size:12pt;color:#000000">Questions? <a href="mailto:patrick.mcmahon@ucsf.edu">Contact us</a>.<br>
+  </div>
+        
+</div>
+ 
+>>>>>>> a6b6faef177b7497487416c060f55c5005678592
 <p>&nbsp;</p>
 <h3 style="font-family:arial,san-serif;">Option 1: Campaign Logo</h3>
 
@@ -50,7 +119,8 @@ University of California, San Francisco<br>
 220 Montgomery, 5th Floor | San Francisco, CA 94104<br>
 tel: XXX.XXX.XXXX | mobile: XXX.XXX.XXXX<br>
 <br>
-<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo_Opaque_Black-01.png" width="150" height="101" alt="UCSF: The Campaign"></a> <br>
+<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo_Opaque_Black-01.png" width="150" height="101" alt="UCSF: The Campaign"></a>
+<br>
 <br>
 <a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature">campaign.ucsf.edu</a> | <a href="https://giving.ucsf.edu">giving.ucsf.edu</a></span></p>
 
@@ -68,7 +138,8 @@ University of California, San Francisco<br>
 220 Montgomery, 5th Floor | San Francisco, CA 94104<br>
 tel: XXX.XXX.XXXX | mobile: XXX.XXX.XXXX<br>
 <br>
-<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo-Cancer.png" width="360" height="103" alt="UCSF: The Campaign"/></a><br>
+<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo-Cancer.png" width="360" height="103" alt="UCSF: The Campaign"/></a>
+<br>
 <br>
 <a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature">campaign.ucsf.edu</a> | <a href="http://cancer.ucsf.edu">cancer.ucsf.edu</a> | <a href="https://makeagift.ucsf.edu/site/SPageServer?pagename=A1_API_GeneralGivingForm&Primary=Cancer">makeagift.ucsf.edu/cancer</a></span></p>
 
@@ -86,7 +157,8 @@ University of California, San Francisco<br>
 220 Montgomery, 5th Floor | San Francisco, CA 94104<br>
 tel: XXX.XXX.XXXX | mobile: XXX.XXX.XXXX<br>
 <br>
-<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo-Weill.png" width="348" height="111" alt="UCSF: The Campaign"/></a><br>
+<a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature" title="UCSF: The Campaign" style="border:none"><img src="UCSF_Campaign-Logo-Weill.png" width="348" height="111" alt="UCSF: The Campaign"/></a>
+<br>
 <br><a href="https://campaign.ucsf.edu/?utm_source=emailsignature&utm_medium=email&utm_campaign=udarsignature">campaign.ucsf.edu</a> | <a href="https://weill.ucsf.edu">weill.ucsf.edu</a></span></p>
 
 
