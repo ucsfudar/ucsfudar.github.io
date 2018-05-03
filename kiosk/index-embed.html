@@ -91,8 +91,37 @@
    			left:550px;
 			text-align:center;
 		}
+		    .ui-tabs .ui-tabs-nav {
+            margin:0;
+            padding:0;
+        }
+        .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+            background: #5f56a8;
+            border: none;
+        }
+        .ui-widget-header {
+            border: none;
+            background: #FFFFFF;
+        }
+        .ui-widget.ui-widget-content {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .ui-tabs .ui-tabs-panel {
+            padding: 0;
+        }
+         
 </style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 	</script>
       <script>
           $(document).ready(function(){
@@ -118,6 +147,23 @@
 		</div>
 		<div style="background-color: #fff; padding-top: 20px; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
 			<h1>OUR GRAND CHALLENGES</h1>
+            
+  <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">DECODING LIFE</a></li>
+    <li><a href="#tabs-2">REVOLUTIONIZING CARE</a></li>
+    <li><a href="#tabs-3">ACHIEVING HEALTH EQUITY</a></li>
+  </ul>
+  <div id="tabs-1">
+      <p>DECODING LIFE: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   <div id="tabs-2">
+      <p>REVOLUTIONIZING CARE: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   <div id="tabs-3">
+      <p>HEALTH EQUITY: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   </div>
 			<div align="center">
 			<button id="show" style="font-family: impact; font-size:50px; border:0px;">Show</button>
 			<button id="hide" style="font-family: impact; font-size:50px; border:0px; color: grey;">Hide</button>
