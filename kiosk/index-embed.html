@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://ucsfudar.github.io/kiosk/ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UCSF: The Kiosk</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+<style>
+	.embed-container 
+		{
+	 		position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
+		} 
+	.embed-container iframe, .embed-container object, .embed-container embed 
+		{ 
+			position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+		}
+	h1
+		{
+			font-family: impact;
+			font-size: 80px;
+			transform: scale(1, 1.5);
+			text-align: center;
+			line-height: .5;
+		}
+	h2
+		{
+			font-family: impact;
+			font-size: 60px;
+			text-align: center;
+			line-height: 1;
+		}	
+	h3	
+		{
+			font-family: impact;
+			font-size: 40px;
+			transform: scale(1, 1.5);
+			text-align: center;	
+			line-height: 1;					
+		}
+	.h3b	
+		{
+			font-family: impact;
+			color: grey;
+			font-size: 40px;
+			transform: scale(1, 1.5);
+			text-align: center;	
+			line-height: 1;					
+		}
+	h4
+		{
+			font-family: courier;
+			color:#888888;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.1;
+		}
+	p	
+		{
+			font-family: courier;
+			font-size: 40px;
+			text-align: center;
+			line-height: 1.1;
+		}
+	.wp	
+		{
+			font-family: courier;
+			color:#fff;
+			font-size: 40px;
+			text-align: center;
+			line-height: 1.1;
+		}
+	.site
+		{
+			font-family: courier;
+			font-size: 80px;
+			transform: scale(1, 1.5);
+			text-align: center;
+			line-height: .5;
+		}
+	#videobox 
+		{
+			position:relative;
+		}				
+	#logo_video_overlay
+		{ 
+			position:absolute;
+ 		   	width:320px;
+  	  		min-height:40px;
+  		  	z-index:300000;
+  			bottom:400px;
+   			left:550px;
+			text-align:center;
+		}
+		    .ui-tabs .ui-tabs-nav {
+            margin:0;
+            padding:0;
+        }
+        .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+            background: #5f56a8;
+            border: none;
+        }
+        .ui-widget-header {
+            border: none;
+            background: #FFFFFF;
+        }
+        .ui-widget.ui-widget-content {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .ui-tabs .ui-tabs-panel {
+            padding: 0;
+        }
+         
+</style>
+
+
+      <script>
+          $(document).ready(function(){
+          $("#hide").click(function(){
+            $("h3").hide();
+          });
+          $("#show").click(function(){
+            $("h3").show();
+          });
+         });
+     </script>
+</head>
+	<body style="margin:0; background-color: #000;">
+		<div max-width="100%" max-height="100%">	
+		<div style="background-color:#000; padding-top:35px; padding-right: 35px; padding-left: 35px; padding-bottom: 35px;">
+						<img style="display:block; margin-left:auto; margin-right:auto;" src="./images/campaign-logo.png" width="320px" height="auto" alt="UCSF: The Campaign">
+		</div>
+		<div style="background-color:#000;">
+		
+<div class='embed-container'><iframe src="https://player.vimeo.com/video/267704231?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+			
+		</div>
+		<div style="background-color: #fff; padding-top: 20px; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
+			<h1>OUR GRAND CHALLENGES</h1>
+            
+  <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">DECODING LIFE</a></li>
+    <li><a href="#tabs-2">REVOLUTIONIZING CARE</a></li>
+    <li><a href="#tabs-3">ACHIEVING HEALTH EQUITY</a></li>
+  </ul>
+  <div id="tabs-1">
+      <p>DECODING LIFE: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   <div id="tabs-2">
+      <p>REVOLUTIONIZING CARE: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   <div id="tabs-3">
+      <p>HEALTH EQUITY: UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+   </div>
+   </div>
+			<div align="center">
+			<button id="show" style="font-family: impact; font-size:50px; border:0px;">Show</button>
+			<button id="hide" style="font-family: impact; font-size:50px; border:0px; color: grey;">Hide</button>
+			</div>
+			<h3>This text will go away if you click the hide button.</h3>
+			<p>UCSF is laser-focused on decoding the science of you – from your atoms to your ecosystem. We zoom in to focus on your molecules and zoom out to focus on the world around you, ultimately illuminating how the two interconnect and shape your health.</p>
+		</div>
+		<div style="background-color: #000; padding-top: 20px; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
+			<p class="wp">“We will seize on this transformative moment to solve some of the world's most intractable health challenges.”</p>
+			<h4>SAM HAWGOOD, Chancellor <br>Arthur and Toni Rembe Rock Distinguished Professor</h4>
+		</div>
+		<div style="background-color: #fff; padding:75px;">
+			<div class="site">campaign.ucsf.edu</div>
+		</div>		
+
+</html>
